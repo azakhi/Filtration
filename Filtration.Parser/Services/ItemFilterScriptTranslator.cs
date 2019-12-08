@@ -207,6 +207,7 @@ namespace Filtration.Parser.Services
             }
 
             _blockGroupHierarchyBuilder.Cleanup();
+            script.ItemFilterBlockGroups.First().SortChildren();
             return script;
         }
 

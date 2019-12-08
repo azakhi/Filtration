@@ -79,6 +79,8 @@ namespace Filtration.ObjectModel
                 blockGroup.ParentGroup = this;
                 ChildGroups.Add(blockGroup);
             }
+
+            SortChildren();
         }
 
         public void DetachSelf(bool keepChildren)
@@ -103,6 +105,15 @@ namespace Filtration.ObjectModel
                 }
 
                 ParentGroup = null;
+            }
+        }
+
+        public void SortChildren()
+        {
+            ChildGroups.Sort((c1, c2) => c1.GroupName.CompareTo(c2.GroupName));
+            foreach (var child in ChildGroups)
+            {
+                child.SortChildren();
             }
         }
 
