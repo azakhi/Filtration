@@ -346,6 +346,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Resources\Influences.txt" />
     <EmbeddedResource Include="Resources\Enchantments.txt" />
     <Resource Include="Resources\Icons\no_sound_dds_light.png" />
     <Resource Include="Resources\Icons\no_sound_dds.png" />

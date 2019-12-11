@@ -1,0 +1,6 @@
+﻿Crusader
+Elder
+Hunter
+Redeemer
+Shaper
+Warlord

@@ -10,6 +10,7 @@ namespace Filtration.ObjectModel.Enums
         Quality,
         Identified,
         Corrupted,
+        InfluencedItem,
         ElderItem,
         ShaperItem,
         SynthesisedItem,

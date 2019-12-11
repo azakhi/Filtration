@@ -48,6 +48,7 @@ namespace Filtration.ViewModels
         bool AdvancedBlockGroup { get; }
         bool AudioVisualBlockItemsGridVisible { get; set; }
         bool DisplaySettingsPopupOpen { get; set; }
+        IEnumerable<string> AutoCompleteItemInfluences { get; }
         IEnumerable<string> AutoCompleteItemClasses { get; }
         IEnumerable<string> AutoCompleteItemBaseTypes { get; }
         IEnumerable<string> AutoCompleteProphecies { get; }
@@ -200,6 +201,8 @@ namespace Filtration.ViewModels
             }
         }
 
+        public IEnumerable<string> AutoCompleteItemInfluences => _staticDataService.Influences;
+
         public IEnumerable<string> AutoCompleteItemClasses => _staticDataService.ItemClasses;
 
         public IEnumerable<string> AutoCompleteItemBaseTypes => _staticDataService.ItemBaseTypes;
@@ -226,6 +229,7 @@ namespace Filtration.ViewModels
             typeof (ProphecyBlockItem),
             typeof (IdentifiedBlockItem),
             typeof (CorruptedBlockItem),
+            typeof (InfluenceBlockItem),
             typeof (ElderItemBlockItem),
             typeof (ShaperItemBlockItem),
             typeof (SynthesisedItemBlockItem),

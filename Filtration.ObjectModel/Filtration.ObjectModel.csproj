@@ -49,6 +49,7 @@
     <Compile Include="BlockItemBaseTypes\ActionBlockItem.cs" />
     <Compile Include="BlockItemBaseTypes\BlockItemBase.cs" />
     <Compile Include="BlockItemBaseTypes\BooleanBlockItem.cs" />
+    <Compile Include="BlockItemBaseTypes\BooleanStringListBlockItem.cs" />
     <Compile Include="BlockItemBaseTypes\ColorBlockItem.cs" />
     <Compile Include="BlockItemBaseTypes\ColorBooleanBlockItem.cs" />
     <Compile Include="BlockItemBaseTypes\DualIntegerBlockItem.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="BlockItemTypes\BlightedMapBlockItem.cs" />
     <Compile Include="BlockItemTypes\FracturedItemBlockItem.cs" />
     <Compile Include="BlockItemTypes\HasEnchantmentBlockItem.cs" />
+    <Compile Include="BlockItemTypes\InfluenceBlockItem.cs" />
     <Compile Include="BlockItemTypes\MapTierBlockItem.cs" />
     <Compile Include="BlockItemTypes\PlayEffectBlockItem.cs" />
     <Compile Include="BlockItemTypes\BorderColorBlockItem.cs" />

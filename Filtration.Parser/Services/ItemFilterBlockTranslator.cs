@@ -174,6 +174,11 @@ namespace Filtration.Parser.Services
                         AddBooleanItemToBlockItems<IdentifiedBlockItem>(block, trimmedLine);
                         break;
                     }
+                    case "HasInfluence":
+                    {
+                        AddBooleanStringListItemToBlockItems<InfluenceBlockItem>(block, trimmedLine);
+                        break;
+                    }
                     case "ElderItem":
                     {
                         AddBooleanItemToBlockItems<ElderItemBlockItem>(block, trimmedLine);
@@ -560,6 +565,20 @@ namespace Filtration.Parser.Services
         {
             var blockItem = Activator.CreateInstance<T>();
             PopulateListFromString(blockItem.Items, inputString.Substring(inputString.IndexOf(" ", StringComparison.Ordinal) + 1).Trim());
+            block.BlockItems.Add(blockItem);
+        }
+
+        private static void AddBooleanStringListItemToBlockItems<T>(IItemFilterBlock block, string inputString) where T : BooleanStringListBlockItem
+        {
+            var blockItem = Activator.CreateInstance<T>();
+            inputString = inputString.Substring(inputString.IndexOf(" ", StringComparison.Ordinal) + 1).Trim();
+            if (inputString.StartsWith("== "))
+            {
+                blockItem.BooleanValue = true;
+                inputString = inputString.Substring(inputString.IndexOf(" ", StringComparison.Ordinal) + 1).Trim();
+            }
+
+            PopulateListFromString(blockItem.Items, inputString);
             block.BlockItems.Add(blockItem);
         }
 

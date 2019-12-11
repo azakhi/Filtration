@@ -8,6 +8,7 @@ namespace Filtration.Services
 {
     public interface IStaticDataService
     {
+        IEnumerable<string> Influences { get; }
         IEnumerable<string> ItemBaseTypes { get; }
         IEnumerable<string> ItemClasses { get; }
         IEnumerable<string> ItemMods { get; }
@@ -22,6 +23,8 @@ namespace Filtration.Services
             PopulateStaticData();
         }
 
+        public IEnumerable<string> Influences { get; private set; }
+
         public IEnumerable<string> ItemBaseTypes { get; private set; }
 
         public IEnumerable<string> ItemClasses { get; private set; }
@@ -34,6 +37,7 @@ namespace Filtration.Services
 
         private void PopulateStaticData()
         {
+            Influences = new LineReader(() => new StringReader(Resources.Influences)).ToList();
             ItemBaseTypes = new LineReader(() => new StringReader(Resources.ItemBaseTypes)).ToList();
             ItemClasses = new LineReader(() => new StringReader(Resources.ItemClasses)).ToList();
             ItemMods = new LineReader(() => new StringReader(Resources.ItemMods)).ToList();

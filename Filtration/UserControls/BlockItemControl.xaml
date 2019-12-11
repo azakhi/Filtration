@@ -67,6 +67,17 @@
                         </StackPanel>
                     </DataTemplate>
 
+                    <!-- Influence Template -->
+                    <DataTemplate DataType="{x:Type blockItemTypes:InfluenceBlockItem}">
+                        <StackPanel>
+                            <WrapPanel VerticalAlignment="Center" Margin="5,5,5,0">
+                                <RadioButton IsChecked="{Binding BooleanValue}" Margin="0,0,10,0">And</RadioButton>
+                                <RadioButton IsChecked="{Binding BooleanValue, Converter={StaticResource BoolInverterConverter}}">Or</RadioButton>
+                            </WrapPanel>
+                            <userControls:EditableListBoxControl Margin="5,5,5,5" ItemsSource="{Binding Items}" AutoCompleteItemsSource="{Binding ElementName=TopLevelGrid, Path=DataContext.AutoCompleteItemInfluences}" />
+                        </StackPanel>
+                    </DataTemplate>
+
                     <!-- Class Template -->
                     <DataTemplate DataType="{x:Type blockItemTypes:ClassBlockItem}">
                         <userControls:EditableListBoxControl Margin="5,5,5,5" ItemsSource="{Binding Items}" AutoCompleteItemsSource="{Binding ElementName=TopLevelGrid, Path=DataContext.AutoCompleteItemClasses}" />

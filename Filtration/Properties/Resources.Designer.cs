@@ -205,6 +205,27 @@ namespace Filtration.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Armageddon Brand Attached Target Fire Penetration 1
+        ///Armageddon Brand Attached Target Fire Penetration 2
+        ///Armageddon Brand Repeat Frequency 1
+        ///Armageddon Brand Repeat Frequency 2
+        ///Enchantment Abyssal Cry Damage 1
+        ///Enchantment Abyssal Cry Damage 2
+        ///Enchantment Abyssal Cry Duration 1
+        ///Enchantment Abyssal Cry Duration 2
+        ///Enchantment Ancestor Warchief Area Of Effect 1
+        ///Enchantment Ancestor Warchief Area Of Effect 2
+        ///Enchantment Ancestor Warchief Melee Damage 1
+        ///Enchantment Ancestor Warchief Melee Damage 2
+        ///Ench [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Enchantments {
+            get {
+                return ResourceManager.GetString("Enchantments", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] Fontin_SmallCaps {
@@ -225,12 +246,27 @@ namespace Filtration.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Crusader
+        ///Elder
+        ///Hunter
+        ///Redeemer
+        ///Shaper
+        ///Warlord.
+        /// </summary>
+        internal static string Influences {
+            get {
+                return ResourceManager.GetString("Influences", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to A Dab of Ink
         ///A Mother&apos;s Parting Gift
         ///Abandoned Wealth
         ///Aberrant Fossil
         ///Abyssal Axe
         ///Abyssal Cry
+        ///Abyssal Incubator
         ///Abyssal Sceptre
         ///Academy Map
         ///Acid Caverns Map
@@ -242,6 +278,7 @@ namespace Filtration.Properties {
         ///Advanced Traps Support
         ///Aetheric Fossil
         ///Agate Amulet
+        ///Akil&apos;s Prophecy
         ///Albino Rhoa Feather
         ///Alchemy Shard
         ///Alder Spiked Shield
@@ -249,11 +286,7 @@ namespace Filtration.Properties {
         ///Alleyways Map
         ///Allflame
         ///Alloyed Spiked Shield
-        ///Alteration Shard
-        ///Amber Amulet
-        ///Ambush Boots
-        ///Ambush Leaguestone
-        ///Ambush  [rest of string was truncated]&quot;;.
+        ///Alluring  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ItemBaseTypes {
             get {
@@ -274,6 +307,7 @@ namespace Filtration.Properties {
         ///Currency
         ///Daggers
         ///Delve Socketable Currency
+        ///Delve Stackable Socketable Currency
         ///Divination Card
         ///Fishing Rods
         ///Flasks
@@ -281,6 +315,7 @@ namespace Filtration.Properties {
         ///Gloves
         ///Helmets
         ///Hybrid Flasks
+        ///Incubator
         ///Incursion Item
         ///Jewel
         ///Labyrinth Item
@@ -298,16 +333,7 @@ namespace Filtration.Properties {
         ///One Hand Axes
         ///One Hand Maces
         ///One Hand Swords
-        ///Pantheon Soul
-        ///Piece
-        ///Quest Items
-        ///Quivers
-        ///Relics
-        ///Rings
-        ///Sceptres
-        ///Shields
-        ///Small Relics
-        ///Stackable Curre [rest of string was truncated]&quot;;.
+        ///Pantheon Soul        /// [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ItemClasses {
             get {
@@ -367,12 +393,7 @@ namespace Filtration.Properties {
         ///Brutal
         ///Bubbling
         ///Burning
-        ///Burnished
-        ///Butterfly&apos;s
-        ///Buttressed
-        ///Buzzing
-        ///Calming
-        ///Capric [rest of string was truncated]&quot;;.
+        ///Burn [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ItemMods {
             get {
@@ -381,25 +402,41 @@ namespace Filtration.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to A Gracious Master.
+        ///   Looks up a localized string similar to A Call into the Void
+        ///A Dishonourable Death
+        ///A Firm Foothold
+        ///A Forest of False Idols
+        ///A Gracious Master
+        ///A Master Seeks Help
+        ///A Prodigious Hand
+        ///A Regal Death
+        ///A Rift in Time
+        ///A Valuable Combination
+        ///A Vision of Ice and Fire
+        ///A Whispered Prayer
+        ///Abnormal Effulgence
+        ///Against the Tide
+        ///Agony at Dusk
+        ///An Unseen Peril
+        ///Anarchy&apos;s End
+        ///Anarchy&apos;s End I
+        ///Anarchy&apos;s End II
+        ///Anarchy&apos;s End III
+        ///Anarchy&apos;s End IV
+        ///Ancient Doom
+        ///Baptism by Death
+        ///Battle Hardened
+        ///Beyond Sight
+        ///Beyond Sight I
+        ///Beyond Sight II
+        ///Beyond Sigh [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Prophecies {
             get {
                 return ResourceManager.GetString("Prophecies", resourceCulture);
             }
         }
-
-        /// <summary>
-        ///   Looks up a localized string similar to Enchantment Decree of Force.
-        /// </summary>
-        internal static string Enchantments
-        {
-            get
-            {
-                return ResourceManager.GetString("Enchantments", resourceCulture);
-            }
-        }
-
+        
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>

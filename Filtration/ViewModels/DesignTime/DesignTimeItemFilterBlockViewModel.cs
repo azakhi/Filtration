@@ -109,6 +109,7 @@ namespace Filtration.ViewModels.DesignTime
         public bool AdvancedBlockGroup { get; }
         public bool AudioVisualBlockItemsGridVisible { get; set; }
         public bool DisplaySettingsPopupOpen { get; set; }
+        public IEnumerable<string> AutoCompleteItemInfluences { get; }
         public IEnumerable<string> AutoCompleteItemClasses { get; }
         public IEnumerable<string> AutoCompleteItemBaseTypes { get; }
         public IEnumerable<string> AutoCompleteProphecies { get; }
@@ -129,6 +130,7 @@ namespace Filtration.ViewModels.DesignTime
                                                          typeof (ProphecyBlockItem),
                                                          typeof (IdentifiedBlockItem),
                                                          typeof (CorruptedBlockItem),
+                                                         typeof (InfluenceBlockItem),
                                                          typeof (ElderItemBlockItem),
                                                          typeof (ShaperItemBlockItem),
                                                          typeof (SynthesisedItemBlockItem),
