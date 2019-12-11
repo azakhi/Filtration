@@ -1,6 +1,7 @@
 Abyss Jewel
 Active Skill Gems
 Amulets
+Atlas Region Upgrade Item
 Axes
 Belts
 Body Armours
@@ -32,6 +33,7 @@ Mana Flasks
 Map Fragments
 Maps
 Medium Relics
+Metamorph Sample
 Misc Map Items
 One Hand Axes
 One Hand Maces
